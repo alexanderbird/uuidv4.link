@@ -1,10 +1,12 @@
 body {
   display: flex;
+  margin: 0;
   height: 100vh;
   width: 100vw;
   background-color: #f4eee8;
   text-align: center;
   font-size: 12pt;
+  position: relative;
 }
 
 @media (min-width: 700px) {
@@ -31,4 +33,19 @@ body {
 .center__uuid::selection {
   border-radius: 5px;
   background-color: #f5cebe;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8em;
+  padding: 2em;
+}
+
+.footer > *:first-child {
+  margin-right: auto;
 }
