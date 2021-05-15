@@ -10,3 +10,8 @@ Resources:
           TTL: '900'
           ResourceRecords:
             - 75.2.60.5
+        - Name: www.uuidv4.link.
+          Type: CNAME
+          TTL: '900'
+          ResourceRecords:
+            - uuidv4-link.netlify.app.
