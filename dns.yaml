@@ -3,10 +3,10 @@ Resources:
   DNS:
     Type: AWS::Route53::RecordSetGroup
     Properties:
-      HostedZoneName: uuidv4.link
+      HostedZoneName: uuidv4.link.
       RecordSets:
         - Name: uuidv4.link.
-          Type: CNAME
+          Type: A
           TTL: '900'
           ResourceRecords:
-            - uuidv4-link.netlify.app
+            - 75.2.60.5
