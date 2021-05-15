@@ -1,0 +1,29 @@
+{
+  "name": "uuidv4.link",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "start": "http-server www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexanderbird/uuidv4.link.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/alexanderbird/uuidv4.link/issues"
+  },
+  "homepage": "https://github.com/alexanderbird/uuidv4.link#readme",
+  "dependencies": {
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "http-server": "^0.12.3",
+    "rollup": "^2.48.0"
+  }
+}

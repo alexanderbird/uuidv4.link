@@ -1,0 +1,12 @@
+#!/usr/bin/env -S macaws deploy uuidv4-link-dns
+Resources:
+  DNS:
+    Type: AWS::Route53::RecordSetGroup
+    Properties:
+      HostedZoneName: uuidv4.link
+      RecordSets:
+        - Name: uuidv4.link.
+          Type: CNAME
+          TTL: '900'
+          ResourceRecords:
+            - uuidv4-link.netlify.app
