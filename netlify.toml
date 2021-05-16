@@ -9,3 +9,8 @@
   from = "/txt"
   to = "/.netlify/functions/txt"
   status = 200
+
+[[redirects]]
+  from = "/json"
+  to = "/.netlify/functions/json"
+  status = 200
