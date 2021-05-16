@@ -16,8 +16,8 @@ window.addEventListener('DOMContentLoaded', () => {
   const element = document.querySelector('#uuid');
   element.innerHTML = v4();
   selectAll(element);
-  setTimeout(() => {
+  setInterval(() => {
     element.innerHTML = v4();
     selectAll(element);
-  }, 50 * 1000);
+  }, 5 * 1000);
 });
