@@ -23,5 +23,16 @@ export default [
     plugins: [
       nodeResolve()
     ]
+  },
+  {
+    input: 'src/serverless/json.js',
+    output: {
+      file: 'serverless/json.js',
+      format: 'cjs',
+      name: 'main'
+    },
+    plugins: [
+      nodeResolve()
+    ]
   }
 ];
