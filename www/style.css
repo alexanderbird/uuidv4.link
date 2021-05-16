@@ -16,6 +16,11 @@ body {
   }
 }
 
+::-moz-selection, 
+::selection {
+  background-color: #f5cebe;
+}
+
 .center {
   margin: auto;
 }
@@ -28,12 +33,6 @@ body {
 .center__uuid {
   font-family: monospace;
   color: #114e60;
-}
-
-.center__uuid::-moz-selection, 
-.center__uuid::selection {
-  border-radius: 5px;
-  background-color: #f5cebe;
 }
 
 .footer {
