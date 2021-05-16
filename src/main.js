@@ -12,12 +12,16 @@ function selectAll(element) {
   }
 }
 
-window.addEventListener('DOMContentLoaded', () => {
-  const element = document.querySelector('#uuid');
+function setUUID(element) {
   element.innerHTML = v4();
   selectAll(element);
-  setInterval(() => {
-    element.innerHTML = v4();
-    selectAll(element);
-  }, 5 * 1000);
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  const element = document.querySelector('#uuid');
+  setUUID(element);
+  setInterval(() => setUUID(element), 5 * 1000);
+  Array.from(document.querySelectorAll('.footer code')).forEach(code => {
+    code.addEventListener('click', () => selectAll(code));
+  });
 });
